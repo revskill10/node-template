@@ -6,7 +6,7 @@ import {
   } from 'server/adapter/middlewares';
   import { BinanceController } from 'server/controllers/binance';
   import * as jf from 'joiful';
-  const url = '/api/binance/long/1h';
+  const url = '/api/binance/short/1h';
   class LongOneHourBinanceResponse {
     @(jf.string())
     result: string;

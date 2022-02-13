@@ -1,6 +1,6 @@
 import axios from 'axios';
 export class BinanceController {
-    async long1h(content: string) {
+    async notifyTelegram(content: string) {
         await axios
         .post(
             "https://api.telegram.org/bot2122523169:AAGD-I05i3q4jwH3w-KCNapSiZOJssOCSq8/sendMessage", {
