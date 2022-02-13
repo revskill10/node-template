@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import MethodNotAllowedError from 'server/domain/errors/method-not-allowed-error';
 import httpContext from 'express-http-context';
 import { LoggerService } from 'server/adapter/infra/logger';
-import { errorHandler as onError } from 'server/infra/utils/errorHandler';
+import { errorHandler as onError } from 'server/infra/services/error-handler';
 const logger = new LoggerService();
 /**
  * Helper function to log an exit code before exiting the process.

@@ -1,4 +1,4 @@
-import { ILogger } from "server/infra/services/logger";
+import { ILogger } from "server/infra/logger";
 
 export class LoggerService implements ILogger {
   private readonly logger: any;
