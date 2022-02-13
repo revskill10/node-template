@@ -3,7 +3,7 @@ import nc, { NextConnect } from 'next-connect';
 import { NextApiRequest, NextApiResponse } from 'next';
 import MethodNotAllowedError from 'server/domain/errors/method-not-allowed-error';
 import httpContext from 'express-http-context';
-import { LoggerService } from 'server/infra/services/logger';
+import { LoggerService } from 'server/adapter/infra/logger';
 import { errorHandler as onError } from 'server/infra/utils/errorHandler';
 const logger = new LoggerService();
 /**
@@ -67,6 +67,11 @@ export default function core(): NextConnect<NextApiRequest, NextApiResponse> {
           httpContext
         );
       },
+    }).use((req: any, _, next) => {
+      req.app = {
+        logger
+      };
+      return next();
     });
   } catch (err) {
     logger.error(err, 'error caught in base.ts');

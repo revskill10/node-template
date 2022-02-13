@@ -15,7 +15,9 @@ const usersController = new UsersController({
 const handler = core().get(
   url,
   RequestAsyncHandler(
-    async () => {
+    async (req) => {
+      const app = req.app;
+      app.logger.info({}, 'test');
       const result = await usersController.getAllUsers();
       return { users: result };
     }
