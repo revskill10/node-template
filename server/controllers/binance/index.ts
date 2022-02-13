@@ -4,7 +4,7 @@ export class BinanceController {
         await axios
         .post(
             "https://api.telegram.org/bot2122523169:AAGD-I05i3q4jwH3w-KCNapSiZOJssOCSq8/sendMessage", {
-                chat_id: '1762522092',
+                chat_id: '-632962413',
                 text: content,
             }
         )
