@@ -6,7 +6,7 @@ This is a really simple project that shows the usage of Next.js with TypeScript.
 
 Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/revskill10/node-template)
 
 ## Deploy your own
 
